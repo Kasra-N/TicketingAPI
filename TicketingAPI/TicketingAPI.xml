@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketingAPI</name>
+    </assembly>
+    <members>
+        <member name="M:TicketingAPI.Controllers.EventController.GetAll">
+            <summary>
+            Retrieve all of the events.
+            </summary>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.EventController.GetById(System.Int32)">
+            <summary>
+            Retrieve the events by Id.
+            </summary>
+            <param name="eventId">The eventId of the desired event</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.EventSeatController.GetAll(System.Int32)">
+            <summary>
+            Retrieve all of the eventSeat.
+            </summary>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.EventSeatController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Retrieve the eventSeat by eventId and eventSeatId.
+            </summary>
+            <param name="eventId">The eventId of the desired event</param>
+            <param name="eventSeatId">The eventSeatId of the desired eventSeat</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.RowController.GetSectionRows(System.Int32,System.String)">
+            <summary>
+            Retrieve the section row by  venue Id and section name.
+            </summary>
+            <param name="venueId">The Id of the desired venue</param>
+            <param name="sectionName">The name of the desired section</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.RowController.GetSectionRow(System.Int32,System.String,System.String)">
+            <summary>
+            Retrieve the section row by venue Id, section name, and row name.
+            </summary>
+            <param name="venueId">The Id of the desired venue</param>
+            <param name="sectionName">The Id of the desired venue</param>
+            <param name="rowName">The name of the desired section</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.SeatController.GetSectionRow(System.Int32,System.String,System.String)">
+            <summary>
+            Retrieve the section row by venue Id, section name, and row name.
+            </summary>
+            <param name="venueId">The Id of the desired venue</param>
+            <param name="sectionName">The Id of the desired venue</param>
+            <param name="rowName">The name of the desired section</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.SeatController.GetSeat(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Retrieve the seat by venue Id, section name, and row name.
+            </summary>
+            <param name="venueId">The Id of the desired venue</param>
+            <param name="sectionName">The Id of the desired venue</param>
+            <param name="rowName">The name of the desired section</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.SectionController.GetAllSections">
+            <summary>
+            Retrieve all sections.
+            </summary>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.SectionController.GetVenueSections(System.Int32)">
+            <summary>
+            Retrieve the section by venue Id.
+            </summary>
+            <param name="venueId">The Id of the desired venue</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.SectionController.GetSection(System.Int32,System.String)">
+            <summary>
+            Retrieve the seat by venue Id and section name.
+            </summary>
+            <param name="venueId">The Id of the desired venue</param>
+            <param name="sectionName">The Id of the desired venue</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.TicketPurchaseController.GetAll">
+            <summary>
+            Retrieve all tickets purchased
+            </summary>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.TicketPurchaseController.GetAllEventPurchases(System.Int32)">
+            <summary>
+            Retrieve ticket purchased by eventId.
+            </summary>
+            <param name="eventId">The Id of the desired venue</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.TicketPurchaseController.GetTicketPurchase(System.Int32)">
+            <summary>
+            Retrieve ticket purchased by ticketPurchaseId
+            </summary>
+            <param name="ticketPurchaseId">The Id of the desired venue</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.TicketPurchaseController.Create(TicketingAPI.Models.TicketPurchaseJSON)">
+            <summary>
+            Create ticket purchased
+            </summary>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.TicketPurchaseController.Delete(System.Int32,System.String)">
+            <summary>
+            Delete ticket purchased
+            </summary>
+            <param name="ticketPurchaseId">The Id of the desired venue</param>
+            <param name="ConfirmationCode">The Id of the desired venue</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.VenueController.GetAll">
+            <summary>
+            Get all venues
+            </summary>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.VenueController.GetById(System.Int32)">
+            <summary>
+            Get venue by Id
+            </summary>
+            <param name="venueId">The Id of the desired venue</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:TicketingAPI.Controllers.VenueController.GetUpcomingEvents(System.Int32)">
+            <summary>
+            Get upcoming events by venueId.
+            </summary>
+            <param name="venueId">The Id of the desired venue</param>
+            <returns>A string status</returns>
+        </member>
+    </members>
+</doc>
